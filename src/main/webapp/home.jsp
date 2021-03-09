@@ -36,7 +36,7 @@
     Employee employee = (Employee) request.getSession().getAttribute("user");
     if (employee.getLevel() > 0) {
 %>
-Yaahy
+Yeah
 <%}%>
 </body>
 </html>

@@ -13,21 +13,21 @@
 </head>
 <body>
 <c:if test="${isActive == false}">
-    <h1>ЧЕК ЗАКРЫТ!</h1>
+    <h1>Check is closed!</h1>
     <hr/>
 </c:if>
 <div class="form-style-6">
-<h1>Добавить продукт в чек</h1>
+<h1>Add items to check</h1>
 <form action="controller?command=submit_checkitem" method="post">
-    <label for="name_id">Введите имя или айди товара</label>
+    <label for="name_id">Enter name or id</label>
     <input type="text" name="name_id" id="name_id" required>
     <br>
     <br>
-    <label for="name_id">Введите вес или количество товара</label>
-    <input type="number" name="weight" id="weight" placeholder="Вес">
-    <input type="number" name="amount" id="amount" placeholder="Количество">
+    <label for="name_id">Enter weight/amount</label>
+    <input type="number" name="weight" id="weight" placeholder="Weight">
+    <input type="number" name="amount" id="amount" placeholder="Amount">
     <br>
-    <input type="submit" name="add" value="Добавить">
+    <input type="submit" name="add" value="Add">
 </form>
 <hr/>
 </div>
@@ -35,19 +35,19 @@
     <div class="form-style-6">
     <h1>Удалить продукт из чека</h1>
     <form action="controller?command=delete_checkitem" method="post">
-        <label for="delete_item">Введите имя или айди товара</label>
+        <label for="delete_item">Enter name or id</label>
         <input type="text" name="delete_item" id="delete_item" required>
         <br>
-        <input type="submit" name="delete" value="Удалить">
+        <input type="submit" name="delete" value="Delete">
     </form><br><br>
 
     <form action="controller?command=delete_check" method="post">
-        <input type="submit" name="close_check" value="Закрыть чек">
+        <input type="submit" name="close_check" value="Close check">
     </form>
     </div>
     <hr/>
 </c:if>
-<a href="controller?command=catalogue">Открыть каталог</a>
+<a href="controller?command=catalogue">Catalogue</a>
 
 <h2>Check id ${check_id}</h2>
 <table style="width:50%" class="styled-table">
