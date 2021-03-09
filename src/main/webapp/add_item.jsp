@@ -1,6 +1,6 @@
 <%--
   Created by IntelliJ IDEA.
-  User: nisko
+  User: yulyz
   Date: 06.03.2021
   Time: 16:55
   To change this template use File | Settings | File Templates.
@@ -37,7 +37,7 @@
 </form><hr/><br><br>
 
 <h2>Items:</h2>
-<table style="width:100%">
+<table style="width:100%" >
     <tr>
         <td>ID</td>
         <td>Name</td>
